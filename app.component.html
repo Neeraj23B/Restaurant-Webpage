@@ -1,0 +1,52 @@
+<!-- Bootstrap layout demo-->
+<div class="container-fluid" height="600px" style="background-color: rgb(241, 230, 194);">
+  <!--First row - header -->
+  <br>
+  <div class="row">
+    <div class="col-sm-12 art1">
+    <app-header></app-header>
+    </div>
+  </div>
+  <!-- Navigation Bar -->
+  <div class="row">
+    <div class="col-sm-12 art2">  
+  <div class="collapse navbar-collapse" id="navbarNav"></div>
+  <ul class="nav nav-tabs">
+  <li class="nav-item ">
+    <a class="nav-link" routerLink="home" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" routerLink="about" routerLinkActive="active">About</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" routerLink="news" routerLinkActive="active">News</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link" routerLink="contact" routerLinkActive="active">Contact</a>
+  </li>
+  <li class="nav-item ">
+    <a class="nav-link" routerLink="reservation" routerLinkActive="active">Reservation</a>
+</li>
+<li class="nav-item ">
+  <a class="nav-link" routerLink="menu" routerLinkActive="active">Menu</a>
+</li>
+<li class="nav-item ">
+  <a class="nav-link" routerLink="review" routerLinkActive="active">Review</a>
+</li>
+      </ul>
+<router-outlet></router-outlet>
+    </div>
+  </div>
+  <!-- Body -->
+  <div class="row">
+    <div class="col-sm-12 art3">
+    <app-body></app-body> 
+    </div>
+  </div>
+  <!-- Footer -->
+  <div class="row">
+    <div class="col-sm-12 art4">
+    <app-footer></app-footer>
+    </div>
+  </div>
+  </div>
